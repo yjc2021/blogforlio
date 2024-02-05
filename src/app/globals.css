@@ -2,8 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  @apply transition-colors duration-200;
+}
+
 .light {
-  --background: 245, 245, 245;
+  --background: 255, 255, 255;
   --border: 212, 212, 212;
 
   --cta: 69, 121, 255;
@@ -17,7 +21,7 @@
 }
 
 .dark {
-  --background: 245, 245, 245;
+  --background: 0, 0, 0;
   --border: 217, 217, 217;
 
   --cta: 69, 121, 255;
