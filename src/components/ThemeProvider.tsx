@@ -10,7 +10,7 @@ interface Props {
 const ThemeProvider = ({ children }: Props) => {
   const pageTheme = useAtomValue(pageThemeAtom);
 
-  return <div className={`${pageTheme}`}>{children}</div>;
+  return <div className={`${pageTheme} h-full w-full bg-background`}>{children}</div>;
 };
 
 export default ThemeProvider;
